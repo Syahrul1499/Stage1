@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <div>
+            
+        </div>
+        <div>
+            <label for="input-name">Name</label>
+            <input height="50" type="text" placeholder="Your Name" id="input-name" required>
+        </div>
+        <div>
+            <label for="input-Email">Email</label>
+            <input type="text" placeholder="Your Email" id="input-Email" required>
+            <div>
+                <div>
+                    <label for="input-Phone">Phone Number</label>
+                    <input type="number" placeholder="Your number" id="input-Phone" required>
+                </div>
+                <div>
+                    <label for="input-Subject">Subject</label>
+                    <select id="input-Subject">
+                        <option value="" hidden>select</option>
+                        <option>FrontEnd</option>
+                        <option>BackEnd</option>
+                        <option>Fullstack</option>
+                    </select>
+                </div>
+                <label for="input-message">Your Message</label>
+                <textarea rows="5" cols="60" placeholder="Your Message" id="input-message"></textarea>
+                <button type="button" onclick="showdata()">submit</button>
+                
+            </div>
+    </form>
+</body>
+<script src="contact.js"></script>
+</html>
