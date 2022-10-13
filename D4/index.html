@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <nav class="wrapper">
+            <div class="brand">
+                <img src="logo.png" alt="">
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="active">My Project</a></li>
+                </ul>
+            </div>
+            <button class="botton">
+                contact me
+            </button>
+        </nav>
+    </div>
+    <h2>ADD MY PROJECT</h2>
+    <form>
+        <div>
+            <label for="input-projectName">Project name</label><br>
+            <input height="50" type="text" placeholder="Your Name" id="input-projectName"><br>
+            <label for="input-startDate">Start Date</label><br>
+            <input type="date" id="input-startDate">
+            <div>
+                <div>
+                    <label for="input-endDate">End Date</label><br>
+                    <input type="date" id="input-endDate">
+                </div>
+                <label for="input-description">Description</label><br>
+                <textarea rows="5" cols="60" placeholder="Your Message" id="input-description"></textarea>
+            </div>
+            <label>Technologies</label>
+            <div class="box">
+                <div>
+                    <input type="checkbox" id="node" name="node" value="Node js">
+                    <label for="node">Node js</label><br>
+                </div>
+                <div>
+                    <input type="checkbox" id="next" name="next" value="Next js">
+                    <label for="next">Next js</label><br>
+                </div>
+                <div>
+                    <input type="checkbox" id="react" name="react" value="React js">
+                    <label for="react">React js</label><br>
+                </div>
+                <div>
+                    <input type="checkbox" id="script" name="script" value="TypeScript">
+                    <label for="script">TypeScript</label><br>
+                </div>
+            </div>
+            <div>
+                <label for="image">Upload Image:</label>    
+            </div>
+            <div>
+                <input type="file" id="image" name="image">
+            </div>
+
+            <button class="button" type="submit" onclick="addBlog(event)">submit</button>
+        </div>
+    </form>
+    <div id="contents" class="blog-list"></div>
+</body>
+<script src="blog.js"></script>
+
+</html>
