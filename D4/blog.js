@@ -41,34 +41,34 @@ function addBlog(event) {
 
 function renderBlog() {
     document.getElementById("contents").innerHTML = ''
-
+    document.getElementById("contents").innerHTML += `
+    <h1>MY PROJECT</h1>`
     for (let index = 0; index < dataBlog.length; index++) {
         console.log("test",dataBlog[index])
 
         document.getElementById("contents").innerHTML += `
-        <div class="blog-list-item">
-        <h1>MY PROJECT</h1>
+        <div class="blog">
             <div class="blog-image">
                 <img src="${dataBlog[index].image}">
             </div>
             <div class="blog-content">
-                <div class="btn-group">
-                    <button class="btn-edit">Delete</button>
-                    <button class="btn-post">Edit</button>
-                </div>
+              
                 <h1>
-                    <a href="blog-detail.html" target="_blank">
+                    <a href="detail.html" target="_blank">
                         ${dataBlog[index].projectName}
                     </a>
                 </h1>
                 <div class="detail-blog-content">
-                    12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsy
+                    durasi: 3 bulan
                 </div>
                 <p>
                     ${dataBlog[index].description}
                 </p>
             </div>
-            
+            <div class="btn">
+            <button class="btn-edit">Delete</button>
+            <button class="btn-post">Edit</button>
+        </div>
         </div>
         `
     }

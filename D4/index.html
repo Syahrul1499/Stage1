@@ -23,18 +23,22 @@
     <form>
         <div>
             <label for="input-projectName">Project name</label><br>
-            <input height="50" type="text" placeholder="Your Name" id="input-projectName"><br>
-            <label for="input-startDate">Start Date</label><br>
-            <input type="date" id="input-startDate">
-            <div>
+            <input height="50" type="text" placeholder="Your Name" id="input-projectName"><br><br>
+            
+            <div class="date">
+                <div>
+                    <label for="input-startDate">Start Date</label><br>
+                    <input type="date" id="input-startDate">
+                </div>
                 <div>
                     <label for="input-endDate">End Date</label><br>
                     <input type="date" id="input-endDate">
                 </div>
-                <label for="input-description">Description</label><br>
-                <textarea rows="5" cols="60" placeholder="Your Message" id="input-description"></textarea>
-            </div>
-            <label>Technologies</label>
+            </div><br>
+            <label for="input-description">Description</label><br>
+            <textarea rows="5" cols="60" placeholder="Your Message" id="input-description"></textarea><br><br>
+
+            <label>Technologies</label><br>
             <div class="box">
                 <div>
                     <input type="checkbox" id="node" name="node" value="Node js">
@@ -52,13 +56,13 @@
                     <input type="checkbox" id="script" name="script" value="TypeScript">
                     <label for="script">TypeScript</label><br>
                 </div>
-            </div>
+            </div><br>
             <div>
                 <label for="image">Upload Image:</label>    
             </div>
             <div>
                 <input type="file" id="image" name="image">
-            </div>
+            </div><br>
 
             <button class="button" type="submit" onclick="addBlog(event)">submit</button>
         </div>
